@@ -5,6 +5,28 @@
     margin: auto;
     background-color: var(--purpleColor);
     border-radius: 1.5vw; /* Adjust the border-radius as a percentage of the viewport width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+
+.square .text-content{
+    flex: 50%;
+}
+
+.square .image-content {
+    flex: 25%; /* Adjust the flex-basis of the image content to be smaller */
+    justify-content: flex-end; /* This line might not be needed if .square already uses justify-content: space-between; */
+    align-self: center; /* Align the image content vertically center */
+}
+
+.square .image-content img {
+    max-width: 90%; /* Ensure the image scales down within its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make sure the image is a block-level element */
+    margin-left: auto; /* Push the image to the right */
+    max-height: 20%;
 }
 
 h1 {
@@ -14,6 +36,7 @@ h1 {
     text-align: left;
     font-size: 4.5vw; /* Adjust font-size as a percentage of the viewport width */
     text-shadow: 0.2vw 0.2vw var(--whiteColor);
+    margin-left: 5%;
 }
 
 p {
@@ -146,8 +169,9 @@ h2 {
 /* Adaptation for feature logos to be a percentage of the parent container */
 .featureLogo {
     width: 15vw; /* This will make the logo 20% the width of the viewport */
-    height: auto; /* Maintain the aspect ratio */
+    height: 250px; /* Maintain the aspect ratio */
     max-width: 20% flex;
+
 }
 
 .row{
@@ -178,6 +202,7 @@ h2 {
 .feature2 h3 {
     font-size: 2.5vw;
     text-shadow: 0.2vw 0.2vw var(--yellowColor);
+    
 }
 
 .feature2 p {
