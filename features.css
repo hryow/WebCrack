@@ -21,7 +21,7 @@
 
 /*Feature 1 & 3*/
 .feature1and3 {
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     align-items: center;
     margin-left: 20%;
@@ -73,6 +73,7 @@
     margin-left: 20%;
     margin-right: 20%;
     justify-content: space-evenly;
+    margin-bottom: 1%
 }
 
 .image2 {
