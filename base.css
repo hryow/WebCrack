@@ -1,0 +1,152 @@
+* {
+    margin: 10p;
+    padding: 10px;
+    /* font-family: sans-serif; */
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    --whiteColor: #fafafc;
+    --grayColor: #edf1f9;
+    --purpleColor: #9a9bcf;
+    --greenColor: #afe6d3;
+    --yellowColor: #ffd7a0;
+    --redColor: #edb5be;
+    --blackColor: #000000;
+    --darkYellowColor: #e6c48d;
+    background-color: var(--grayColor);
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--blackColor);
+    text-transform: uppercase;
+}
+
+/* Apply the hover effect to all li elements except those with the class .download-link */
+.navbar ul li:not(.download-link)::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--blackColor);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:not(.download-link):hover::after {
+    width: 100%;
+}
+
+.navbar ul li .download-button {
+    background-color: var(--yellowColor);
+    color: var(--blackColor);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--blackColor);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul li .download-button:hover {
+    background-color: var(--darkYellowColor); /* Manually adjusted darker shade of yellow */
+}
+
+.content {
+    /* padding: 10px; */
+    text-align: center; /* Center the content for demonstration */
+    height: 100%;
+}
+
+footer {
+    background-color: var(--purpleColor);
+    color: var(--blackColor);
+    /* padding: 2vw; */
+    text-align: center;
+    border-radius: 20px;
+}
+
+.navbarfooter {
+    width: 85%;
+    margin: auto;
+    /* padding: 20px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbarfooter ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbarfooter ul li a {
+    text-decoration: none;
+    color: var(--blackColor);
+    text-transform: uppercase;
+}
+
+/* Apply the hover effect to all li elements except those with the class .download-link */
+.navbarfooter ul li:not(.download-link)::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--blackColor);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbarfooter ul li:not(.download-link):hover::after {
+    width: 100%;
+}
+
+.navbarfooter ul li .download-button {
+    background-color: var(--yellowColor);
+    color: var(--blackColor);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--blackColor);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbarfooter ul li .download-button:hover {
+    background-color: var(--darkYellowColor); /* Manually adjusted darker shade of yellow */
+}
+
+.logoCaption {
+    padding-top: 2vw;
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    float: right; /* Consider using Flexbox or Grid for layout instead of float */
+    font-weight: 600;
+}

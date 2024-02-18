@@ -1,0 +1,74 @@
+.square {
+    width: 80%;
+    height: 300px; /* Set a fixed height to ensure scrollability */
+    margin: 20px auto; /* Center the square block */
+    background-color: var(--purpleColor);
+    border-radius: 20px;
+}
+
+h1{
+    /* padding: 20px; */
+    margin: center;
+    color: var(--blackColor);
+    text-align: center;
+    font-size: 700%;
+    text-shadow: 2px 2px var(--whiteColor);
+}
+
+p{
+    margin-top: auto; /* Pulls the paragraph up by 20px */
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.download-link-button{
+    background-color: var(--yellowColor);
+    color: var(--blackColor);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--blackColor);
+    transition: background-color 0.3s ease-in-out;
+    float: left;
+    margin-left: 60px;
+}
+.download-link-button:hover {
+    background-color: var(--darkYellowColor); /* Manually adjusted darker shade of yellow */
+}
+
+.name1{
+    display: flex;
+    align-items: center; /* This will vertically center the items in the container */
+    justify-content: center; /* Aligns items to the start of the container */
+    flex-direction: row; 
+    margin: 20px auto; /*Adjust as needed */
+}
+
+.name1Pic{
+    width: 15vw; /* This will make the logo 15% the width of the viewport */
+    height: auto; /* Maintain the aspect ratio */
+    /* No need to use 'flex' in max-width */
+}
+
+.column1{
+    text-align: left;
+    margin-left: 25%;
+    /* text-align: center; */
+}
+
+.column2 {
+    /* This ensures that the text takes up the remaining space */
+    flex-grow: 1;
+    padding-left: 2vw; /* Adds some space between the image and the text */
+    text-align: left; /* Align text to the left */
+}
+
+.h2-name1 {
+    /* This is your h2 font size */
+    font-size: 2.5vw;
+    margin: auto; /* Reset any margins that might be affecting alignment */
+    text-shadow: 0.2vw 0.2vw var(--yellowColor);
+   
+}

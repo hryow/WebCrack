@@ -1,0 +1,225 @@
+.square {
+    padding: auto;
+    width: 80%;
+    height: 45vh; /* Adjust height as a percentage of the viewport height */
+    margin: auto;
+    background-color: var(--purpleColor);
+    border-radius: 1.5vw; /* Adjust the border-radius as a percentage of the viewport width */
+}
+
+h1 {
+    padding: 0.5vw;
+    margin: auto;
+    color: var(--blackColor);
+    text-align: left;
+    font-size: 4.5vw; /* Adjust font-size as a percentage of the viewport width */
+    text-shadow: 0.2vw 0.2vw var(--whiteColor);
+}
+
+p {
+    margin-top: 0%; /* Negative percentage for margin-top; be careful with layout flow */
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-left: 6%;
+    text-align: left;
+    font-size: 1.5vw;
+    
+}
+
+.download-link-button {
+    background-color: var(--yellowColor);
+    color: var(--blackColor);
+    padding: 1vw 2vw;
+    border-radius: 20px; /* Border radius can remain in px if it's a design choice */
+    border: 2px solid var(--blackColor); /* Border can also remain in px */
+    transition: background-color 0.3s ease-in-out;
+    float: left; /* Consider using Flexbox or Grid for layout instead of float */
+    margin-left: 6%;
+    
+    text-decoration: none;
+
+    text-transform: uppercase;
+}
+
+.download-link-button:hover {
+    background-color: var(--darkYellowColor); /* Darken on hover */
+}
+
+h2 {
+    padding: 1.5vw;
+    margin: 1.5vw;
+    color: var(--blackColor);
+    text-align: left;
+    font-size: 3.5vw; /* Adjust font-size as a percentage of the viewport width */
+    text-shadow: 0.2vw 0.2vw var(--purpleColor);
+}
+
+.what-it-is,
+.why-we-built-it {
+    text-align: center;
+    width: 80%; /* Adjust width as a percentage of the parent container */
+    margin: auto;
+}
+
+.what-it-is .image-content,
+.why-we-built-it .image-content {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 20%; /* Maximum width as a percentage */
+    width: 100%;
+}
+
+.what-it-is .image-content img,
+.why-we-built-it .image-content img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.what-it-is .text-content,
+.why-we-built-it .text-content {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    max-width: 70%; /* Maximum width as a percentage */
+    width: 100%;
+    padding: 0 2vw;
+}
+
+@media (max-width: 768px) {
+    .what-it-is .text-content,
+    .why-we-built-it .text-content,
+    .what-it-is .image-content,
+    .why-we-built-it .image-content {
+        display: block;
+        max-width: none;
+        width: 50vw;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .what-it-is,
+    .why-we-built-it {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 5.5vw; /* Increase the font size for smaller screens if needed */
+    }
+
+    h2 {
+        font-size: 4.5vw;
+    }
+
+    .download-link-button {
+        margin-left: 0;
+        width: auto;
+        padding: 4vw 8vw; /* Increase padding for a larger button on smaller screens */
+    }
+}
+
+.h2-features{
+    text-align: center;
+    
+}
+
+/* Assuming .feature1 is similar to .what-it-is and .why-we-built-it */
+.feature1 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.feature1 h3 {
+    font-size: 2.5vw;
+    text-shadow: 0.2vw 0.2vw var(--yellowColor);
+    
+}
+
+.feature1 p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+/* Adaptation for feature logos to be a percentage of the parent container */
+.featureLogo {
+    width: 15vw; /* This will make the logo 20% the width of the viewport */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 20% flex;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row .feature1{
+    flex: 1;
+    flex-direction: row;
+}
+.row .feature2{
+    flex: 1;
+    flex-direction: row;
+}
+.row .feature3{
+    flex: 1;
+    flex-direction: row;
+}
+
+.feature2 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.feature2 h3 {
+    font-size: 2.5vw;
+    text-shadow: 0.2vw 0.2vw var(--yellowColor);
+}
+
+.feature2 p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.feature3 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.feature3 h3 {
+    font-size: 2.5vw;
+    text-shadow: 0.2vw 0.2vw var(--yellowColor);
+}
+
+.feature3 p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.download-here h2{
+    text-align: center;
+}
+
+.download-here .download-here-button{
+    background-color: var(--yellowColor);
+    color: var(--blackColor);
+    padding: 1vw 2vw;
+    border-radius: 20px; /* Border radius can remain in px if it's a design choice */
+    border: 2px solid var(--blackColor); /* Border can also remain in px */
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block; /*allow margin adjustments*/
+    margin-top: 1vw; /* Adjust the top margin as needed */
+    margin-bottom: 3vw; /* More space at the bottom */
+}
+
+.download-here .download-here-button:hover {
+    background-color: var(--darkYellowColor); /* Manually adjusted darker shade of yellow */
+}
